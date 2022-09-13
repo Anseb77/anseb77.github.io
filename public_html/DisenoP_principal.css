@@ -1,0 +1,72 @@
+
+body{
+     height: 400px;
+     background-image: url("https://st.depositphotos.com/1605581/3032/i/450/depositphotos_30328185-stock-photo-abstract-blue-background-business-card.jpg");
+     background-size: cover;
+     background-repeat:no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     font-family: 'Noto Sans JP', sans-serif;
+     margin: auto; 
+
+
+}
+
+.navbar{
+        background: aqua;
+	width: 1000px;
+	margin: 30px auto;
+        text-align: center;
+        
+}
+
+.navbar ul{
+	list-style: none;
+        max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+        
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 135%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+
+
+
+
